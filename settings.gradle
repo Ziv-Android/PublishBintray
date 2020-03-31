@@ -1,0 +1,3 @@
+rootProject.name='PublishBintray'
+include ':app'
+include ':developutils'
