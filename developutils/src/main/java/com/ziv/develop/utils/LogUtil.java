@@ -114,18 +114,6 @@ public class LogUtil {
         }
     }
 
-    public static void processLog(String msg) {
-        Log.d("ProcessLog", msg);
-    }
-
-    public static void stateLog(String msg) {
-        Log.d("StateLog", msg);
-    }
-
-    public static void timeLog(long time) {
-        Log.d("TimeTest", "time cost: " + (System.currentTimeMillis() - time));
-    }
-
     /**
      * 针对网络请求结果的大日志输出控制台被截断的日志输出
      */

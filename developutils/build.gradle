@@ -37,7 +37,7 @@ publish {
     userOrg = 'ziv-android'
     groupId = 'com.ziv.develop.utils'
     artifactId = 'DevelopUtils'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'tools for develop'
     website = 'https://github.com/Ziv-Android/PublishBintray'
 }
