@@ -1,6 +1,9 @@
 package com.ziv.develop.utils;
 
+import android.Manifest;
 import android.os.SystemClock;
+
+import androidx.annotation.RequiresPermission;
 
 import com.ziv.develop.utils.server.SntpClient;
 
@@ -33,6 +36,7 @@ public class TimeUtil {
     /**
      * 注：此方法需要连接网络访问服务器，故不能在UI线程直接调用
      */
+    @RequiresPermission(Manifest.permission.INTERNET)
     public static long getCurrentTime() {
         SntpClient sntpClient = new SntpClient();
         long time = System.currentTimeMillis();
