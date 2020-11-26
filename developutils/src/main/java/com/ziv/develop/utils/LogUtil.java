@@ -13,7 +13,7 @@ import android.util.Log;
  */
 public class LogUtil {
     private static final String TAG = "LogUtil";
-    private static boolean DEBUG = BuildConfig.DEBUG;
+    private static boolean DEBUG = true;
 
     private static final int CURRENT_STACK_INDEX = 6;
 
@@ -31,6 +31,9 @@ public class LogUtil {
     private static int mLevel = LOG_LEVEL_ERROR;
     private static ITimeCost mTimeCost;
 
+    public void setDebugModel(boolean model) {
+        DEBUG = model;
+    }
     /**
      * Release版本后，日志输出控制
      *
